@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> TikTok Palesa Mashego</title>
+    <link rel="stylesheet" type="text/css" href="palesamashego.css">
+</head>
+
+<body style="display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #222;">
+
+    <span><h2 style="position: relative;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    color: #555;
+    transition: 0.25em;
+
+    color: rgb(255, 0, 170);
+    text-shadow: 0 0 5px rgb(255, 0, 98),
+    0 0 15px rgb(255, 81, 0),
+    0 0 30px rgb(255, 0, 0)"
+
+    class="text">Palesa Mashego</h2>
+
+    <script>
+    let text = document.querySelector('.text');
+    text.innerHTML = text.innertext.split('').map((letters, i) =>
+        <span style="transition=delay:${i * 40}ms;
+        filter:hue-rotate(${i * 30}deg)"> ${letters} </span>).join
+            ('');
+    </script>
+</body>
+
+</html>

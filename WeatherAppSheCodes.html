@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherUpdate</title>
+  </head>
+  <style>
+
+    h1 {
+    text-align: center;
+    display: block;
+    color: #1a64d6;
+    line-height: 48px;
+    margin: 0;
+    font-size: 40px;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    display: inline;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 35px;
+      margin: 0;
+      display: block;
+      font-weight: bold;
+      font-family: Helvetica, Arial, sans-serif;
+      list-style: none;
+    }
+
+    h4{
+    text-align: center;
+    display: block;
+    color: #1a64d6;
+    line-height: 48px;
+    margin: 0;
+    font-size: 40px;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    display: inline;
+    }
+
+     p {
+      text-align: center;
+      font-size: 19px;
+      font-family: monospace;
+      padding: 10px 5px;
+      margin: 5px auto;
+      display: block;
+      list-style: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: auto auto;
+      margin: auto auto;
+      text-align: center;
+    }
+
+    li {
+      list-style: none;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      max-width: 400px;
+      margin: 0 auto;
+      display: list-item;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #1a64d6;
+      background: #1a64d6;
+      color: #fff;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16px 24px;
+      border-radius: 30px;
+      transition: all 200ms ease;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: #1a64d6;
+      color: white;
+      cursor: pointer;
+    }
+
+  </style>
+  <body>
+    <ul>
+    <h4> 🌤 </h4>
+      <h1>Currently 21&deg; in Tokyo</h1>
+        <h2>13&deg; / <strong>23&deg;</strong></h2>
+      <ul>
+      <li>
+        <h3>🌧 Tomorrow<h3>
+        <p>10&deg; / 22&deg;</p>
+      </li>
+      <li>
+        <h3>🌥 Saturday</h3>
+        <p>15&deg; / 17&deg;</p>
+      </li>
+      <li>
+        <h3>☀️ Sunday</h3>
+        <p>25&deg; / 28&deg;</p>
+      </li>
+    </ul>
+    <button class="button">Change city</button>
+  </body>
+</html>

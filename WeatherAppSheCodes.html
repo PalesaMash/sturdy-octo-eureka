@@ -13,7 +13,7 @@
     display: block;
     color: #1a64d6;
     line-height: 48px;
-    margin: 0;
+    margin: 0 auto;
     font-size: 35px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -22,70 +22,81 @@
     h2 {
       text-align: center;
       font-size: 35px;
-      margin: 0;
+      font-weight: lighter;
+      margin: 10px auto;
+      padding: 10px auto;
       display: block;
-      font-weight: bold;
       font-family: Helvetica, Arial, sans-serif;
       list-style: none;
     }
 
     h3{
-        text-align: center;
-        display: block;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-        list-style: none;
-    }
-
-     p {
       text-align: center;
-      font-size: 19px;
-      font-family: monospace;
-      padding: 10px 0;
-      margin: 0 auto;
       display: block;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 20px;
       list-style: none;
-      transition: all 200ms ease-in-out;
-      }
+      padding: 15px auto;
+      margin: 10px auto;
+    }
 
     ul {
       list-style: none;
-      padding: auto auto;
-      margin: 16px auto;
       text-align: center;
       display: block;
     }
+
+    li:hover{
+      background-color: rgb(250, 230, 212);
+      cursor: pointer;
+      margin: 0 auto;
+      padding: 10px auto;
+      transition: all 200ms ease-in-out;
+      width: 300px;
+    }
+
 
     li {
     list-style: none;
     text-align: center;
-    padding: 10px 0;
     border-radius: 10px;
-    transition: all 200ms ease-in-out;
-    max-width: 400px;
+    display: block;
+    padding: 0 auto;
     margin: 0 auto;
-    display: list-item;
     }
 
-    .button {
+    .degrees {
+      text-align: center;
+      font-size: 19px;
+      font-family: monospace;
+      font-weight: lighter;
+      color: gray;
+      padding: 10px 0;
+      margin: 18px auto;
       display: block;
-      margin: 20px auto;
-      font-size: 16px;
-      background: #1a64d6;
-      color: white; 
-      border: #1a64d6;
-      line-height: 22px;
-      padding: 16px 24px;
-      border-radius: 30px;
-      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
-      cursor: pointer;
-      transition: all 200ms ease-in-out;
+      list-style: none;
+      }
+
+    .button {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    padding: 16px 24px;
+    border: 1px solid #1a64d6;
+    background: #1a64d6;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 35px;
+    transition: all 200ms ease-in-out;
+    box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+    cursor: pointer;
     }
 
     button:hover{
-      background: #1a64d6;
-      color: white;
+      color: #1a64d6;
+      background: white;
       cursor: pointer;
     }
 
@@ -97,15 +108,15 @@
         <h2>13&deg; / <strong>23&deg;</strong></h2>
       <li>
         <h3>🌧Tomorrow<h3>
-        <p>10&deg; / <strong>22&deg;</strong></p>
+        <p class="degrees">10&deg; / <strong>22&deg;</strong></p>
       </li>
       <li>
         <h3>🌥 Saturday</h3>
-        <p>15&deg; / <strong>17&deg;</strong></p>
+        <p class="degrees">15&deg; / <strong>17&deg;</strong></p>
       </li>
       <li>
         <h3>☀️ Sunday</h3>
-        <p>25&deg; / 28&deg;</p>
+        <p class="degrees">25&deg; / <strong>28&deg;</strong></p>
       </li>
     </ul>
     <button class="button">Change city</button>
